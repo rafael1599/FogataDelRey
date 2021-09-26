@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@color/purple_200"
+                    android:contentDescription="TODO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAMBURGUESA"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:id="@+id/nombre_plato"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:id="@+id/descri_plato"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10% Descuento"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:id="@+id/descu_plato"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="s/.25"
+                android:textAlignment="viewEnd"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:id="@+id/precio_plato"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+
+    <ImageView
+        android:id="@+id/logoeps_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/logoeps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_login"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ico_login"
+        app:layout_constraintEnd_toStartOf="@+id/text_usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoeps_image" />
+
+
+    <EditText
+        android:id="@+id/text_usuario"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_login"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/image_password"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ico_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_usuario" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="336dp"
+        android:background="@color/transparent"
+        android:text="Olvido su contraseña?"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/text_password" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:minHeight="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.806"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
