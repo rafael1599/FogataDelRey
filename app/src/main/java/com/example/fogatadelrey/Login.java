@@ -67,7 +67,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onError(FacebookException error) {
-                Log.d("mostrar", "Ocurrió un error :C");
+                Log.d("mostrar", "Algo salió mal :/");
             }
         });
 
